@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet'>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+    <title>Анкета</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navigation">
+                <div class="cotainer_nav">
+                    <ul class="nav_list">
+                        <li class="navigation_item" ><a href="index.html" class="nav_battom">Главная информация</a></li>
+                        <li class="navigation_item"><a href="businesscard.html" class="nav_battom" >Визитка</a></li>
+                        <li class="navigation_item"><a href="resume.html" class="nav_battom" >Проекты</a></li>
+                    </ul>
+                    
+                </div>
+            </nav>
+        </header>   
+        <main class="main">
+            <div class="container_main">
+                <div class="container_main_info1">
+                    <div>
+                        <img src="/img/Foto.jpg" class="foto" onclick="SizeFoto()" id="image">
+                    </div>
+                    <div class="shudale">
+                        <h1>Хрусталаев Михаслав Евгеньевич</h1>
+
+                    </div>
+                      
+                </div>
+                    <div class="container_main_info2">
+                        <div class="info1"> 
+                            <h2>Личная информация</h2>
+                            <hr class="line">
+                            <p><b>Гражданство</b>: Российская Федерация</p>
+                            <p><b>Образование</b>: Неоконченное высшее </p>
+                            <p><b>Дата рождения</b>: 17.10.2003 г.</p>
+                            <p><b>Пол</b>: Мужской</p>
+                        </div>
+                        
+                        <div class="info2">
+                            
+                                <h2>Образование</h2>
+                                <hr class="line">
+                                <b>Ступиеский филиал МАИ</b>
+                                <p><b>Факультет</b>: Информатика и вычислительная техника</p>
+                                <p><b>Специальность</b>: 09.03.01</p>
+                                <p><b>Форма обучения</b>: Очная</p>
+                                <p><b>Текущий курс</b>: 4</p>
+                            
+                        </div>
+                    </div>    
+                    <div  class="container_main_info3">
+                        <div class="info3">
+                            <h2>Главные качества</h2>
+                            <hr class="line">
+                            <ul class="list_info">
+                                <li>Коммуникабельность</li>
+                                <li>Ответственность</li>
+                                <li>Командный дух</li>
+                                <li>Адаптивность</li>
+                                <li>Инициативность</li>
+                            <ul>
+                        </div>
+                       
+                        <div class="info4">
+                        <h2>О себе</h2>
+                            <hr class="line">
+                           <p>Я энергичный и целеустремленный человек с опытом работы в IT. </p>
+
+                            <p> Мне нравится работать в команде и достигать общих целей, а также находить творческие решения для сложных проблем.</p> 
+                        </div>
+                        
+                    </div>
+                </div>
+            
+        </main>
+        <footer class=" footer">
+            <div class="container_foooter">
+                <h3>Контакты:</h3>
+                <div class="phone">
+                  <img src="/img/free-icon-phone-11386197.png" alt="" class="icon_phone">  <h4>909999999</h4>
+                </div>
+                <div class="mail">
+                    <img src="/img/free-icon-envelope-481659.png" alt="" class="icon_mail"><h4>hocyraboty@mail.ru</h4>
+                </div>
+            </div>
+     
+              </div>
+        </footer>
+       <script>
+        function SizeFoto () {
+        var img = document.getElementById("image");
+        if (img.style.width != "200px") {
+          img.style.width = "200px";
+          img.style.height = "200px";
+          img.style.borderRadius = "50%"
+          img.style.position = "relative"
+          img.style.top = "0"
+          img.style.left = "0"
+          img.style.transform = ""
+        } else {
+          img.style.borderRadius = "0"
+          img.style.width = "500px";
+          img.style.height = "500px";
+          img.style.position = "absolute"
+          img.style.top = "50%"
+          img.style.left = "50%"
+          img.style.transform = "translate(-50%, -50%)"
+        }
+    }
+       </script>
+   
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <div class="cotainer_nav">
+                <ul class="nav_list">
+                    <li class="navigation_item" ><a href="index.html" class="nav_battom">Главная информация</a></li>
+                    <li class="navigation_item"><a href="businesscard.html" class="nav_battom" >Визитка</a></li>
+                    <li class="navigation_item"><a href="resume.html" class="nav_battom" >Проекты</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container"></div>
+            <div class="profile-card">
+                <img src="/img/Foto.jpg" class="foto" onclick="SizeFoto()" id="image">
+                <div class="profile-info">
+                    <h2>Хрусталаев Михаслав Евгеньевич</h2>
+                    <p>Студент 4-ого курса Ступиноского филиала МАИ</p>
+                </div>
+            </div>
+            <div class="Expire">
+                <h2>Опыт работы</h2>
+                <p>Отсуствует</p>
+            </div>
+            <div class="Skill">
+                <h2>Навыки</h2>
+                <p>	Используемые средства и технологии для разработки программ: Visual Studio 2022, C#, Entity Framework (first code), Blazor.</p>	
+                <p>Используемая СУБД – PostgreSQL (Базовые знания SQL)</p>
+            </div>
+            <div class="Skill">
+                <h2>Проекты</h2>
+                <p>Ознакомиться  с проэтами можно на GitHub</p>	
+                <p>GitHub: <a href="https://github.com/Fonzl">github.com/Fonzl</a></p>
+            </div>
+    </main> 
+    <footer class=" footer">
+        <div class="container_foooter">
+            <h3>Контакты:</h3>
+            <div class="phone">
+              <img src="/img/free-icon-phone-11386197.png" alt="" class="icon_phone">  <h4>909999999</h4>
+            </div>
+            <div class="mail">
+                <img src="/img/free-icon-envelope-481659.png" alt="" class="icon_mail"><h4>hocyraboty@mail.ru</h4>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function SizeFoto () {
+        var img = document.getElementById("image");
+        if (img.style.width != "200px") {
+          img.style.width = "200px";
+          img.style.height = "200px";
+          img.style.borderRadius = "50%"
+          img.style.position = "relative"
+          img.style.top = "0"
+          img.style.left = "0"
+          img.style.transform = ""
+        } else {
+          img.style.borderRadius = "0"
+          img.style.width = "500px";
+          img.style.height = "500px";
+          img.style.position = "absolute"
+          img.style.top = "50%"
+          img.style.left = "50%"
+          img.style.transform = "translate(-50%, -50%)"
+        }
+    }
+       </script>  
+</body>
+</html>
